@@ -1,0 +1,7 @@
+<h1>All Persons</h1>
+<ul>
+  #foreach ($person in $persons)
+    <li><a href="/persons/$person.getId()">$person.getName()</a></li>
+  #end
+</ul>
+<a href="/persons/new">Add New Person</a>

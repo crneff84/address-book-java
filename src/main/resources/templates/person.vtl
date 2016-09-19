@@ -1,0 +1,13 @@
+<h1>$person.getName() Addresses:</h1>
+
+    #foreach ($address in $person.getAddress())
+      <ul>
+        <li>$address.getStreet()</li>
+        <li>$address.getCity()</li>
+        <li>$address.getState()</li>
+        <li>$address.getZip()</li>
+      </ul>
+    #end
+
+<p><a href="/persons/$person.getId()/addresses/new">Add a new Address</a></p>
+<p><a href="/persons">All persons</a></p>

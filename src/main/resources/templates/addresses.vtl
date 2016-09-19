@@ -1,0 +1,16 @@
+<h1>Addresses</h1>
+
+#if ($addresses.size()!=0)
+    #foreach ($address in $addresses)
+      <ul>
+        <li>$address.getStreet()</li>
+        <li>$address.getCity()</li>
+        <li>$address.getState()</li>
+        <li>$address.getZip()</li>
+      </ul>
+    #end
+#else
+  <p>No Addresses!</p>
+#end
+
+<a href="/addresses/new">Add New Addresses</a>
